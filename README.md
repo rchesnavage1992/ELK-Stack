@@ -5,7 +5,8 @@ UCB-Week13-Cybersecurity
 
 The files in this repository were used to configure the network depicted below.
 
-![Cloud Security Network] (https://github.com/rchesnavage1992/WK13Project1/blob/main/Images/Wk12_Cloud_Security_Network.png?raw=true "Cloud Security Network")
+https://github.com/rchesnavage1992/WK13Project1/blob/main/Images/Wk12_Cloud_Security_Network.png
+
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above.
 Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -71,7 +72,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-https://github.com/rchesnavage1992/WK13Project1/blob/main/Images/Elk_docker_ps.png "Elk Docker ps"
+https://github.com/rchesnavage1992/WK13Project1/blob/main/Images/Elk_docker_ps.png 
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
