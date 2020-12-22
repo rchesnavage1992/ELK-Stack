@@ -5,8 +5,7 @@ UCB-Week13-Cybersecurity
 
 The files in this repository were used to configure the network depicted below.
 
-"Cloud Security Network" = https://github.com/rchesnavage1992/WK13Project1/blob/main/Images/Wk12_Cloud_Security_Network.png
-
+![Cloud Security Network] (https://github.com/rchesnavage1992/WK13Project1/blob/main/Images/Wk12_Cloud_Security_Network.png?raw=true "Cloud Security Network"
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above.
 Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
 
