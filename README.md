@@ -57,7 +57,7 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes                 | 104.209.35.161       |
-| Elk-Stack| Yes                 | 104.40.4.82          |
+| Elk-Stack| Yes                 | 52.175.217.229       |
 |          |                     |                      |
 
 ### Elk Configuration
