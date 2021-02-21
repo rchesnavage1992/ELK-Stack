@@ -29,9 +29,9 @@ Load balancing ensures that the application will be highly available, in additio
 - Having a load balancer in place allows incoming traffic to be distributed to different servers so that no one server is over loaded. But do this, it prevents any
 one server from being over loaded.  The advantages of a jump box is to have a system on a network to access and manage devices that is in a seperate security zone. 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _logs____ and system _traffic____.
-- _Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
-- _Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
+- Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+- Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
 
@@ -46,11 +46,11 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the ___Jump_Box__ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _69.209.29.7
+Only the Jump_Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+69.209.29.7
 
-Machines within the network can only be accessed by __the jump_box___.
-- _Jump_Box: ip - 104.209.35.161
+Machines within the network can only be accessed by the jump_box.
+- Jump_Box: ip - 104.209.35.161
 
 A summary of the access policies in place can be found in the table below.
 
@@ -63,7 +63,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _It allows IT people to automate small tasks so that they can focus on bigger task.
+- It allows IT people to automate small tasks so that they can focus on bigger task.
 
 The playbook implements the following tasks:
 - Able to install several containers as one time there for taking less time.
@@ -92,9 +92,9 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the __ELK Playbook ___ file to _Install_Elk.yaml____.
-- Update the __hosts___ file to include the web server and the elk machine
-- Run the playbook, and navigate to the elk container and run sudo ___docker ps____ to check that the installation worked as expected.
+- Copy the ELK Playbook file to _Install_Elk.yaml.
+- Update the hosts file to include the web server and the elk machine
+- Run the playbook, and navigate to the elk container and run sudo docker ps to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook?  __The Ansible Configuration File__ Where do you copy it? __You copy it to the YAML file
@@ -102,5 +102,5 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running? http://52.175.217.229:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-Command to runt the playbook - ansible-playbook install-elk.yaml
+Command to run the playbook - ansible-playbook install-elk.yaml
 Command to update files - nano install-elk.yaml, nano /etc/ansible/host - to add servers
